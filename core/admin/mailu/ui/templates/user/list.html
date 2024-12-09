@@ -26,7 +26,7 @@
     <th>{% trans %}Last edit{% endtrans %}</th>
   </tr>
 </thead>
-<tbody>
+<tbody class="hide-while-loading">
   {%- for user in domain.users %}
   <tr{% if not user.enabled %} class="text-muted"{% endif %}>
     <td>
